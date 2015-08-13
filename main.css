@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.tank {
+    height: 100%;
+    background: linear-gradient(#38a5cf, #264890);
+}
+
+.fish {
+    width: 150px;
+    height: 112px;
+    animation: swim 3.5s infinite;
+}
+
+@keyframes swim {
+    0%, 5% {
+        transform: translate(-50px, -150px) rotate(50deg);
+    }
+    25% {
+        transform: translate(175px, 150px) rotate(30deg);
+    }
+    55% {
+        transform: translate(500px, 350px); rotate(-5deg)
+    }
+    85% {
+        transform: translate(850px, 225px) rotate(-10deg);
+    }
+    100% {
+        transform: translate(1200px, -150px) rotate(-40deg);
+    }
+}
