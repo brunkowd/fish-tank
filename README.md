@@ -1,7 +1,10 @@
 fish-tank
 ==========
 
-Download the application and open index.html in your browser to view the fish tank.
+1. Clone the repository
+2. From the command line, run `npm install` inside the project directory
+3. Run `gulp serve` or simply `gulp`
+4. Enjoy the beautiful fish tank
 
 The purpose of this application is to publish something we hope users will have fun contributing to while we work through our open source process.  In the future, we hope to offer up more substantive material to the community for collaboration. For now, we offer you ..... Fish Tank.
 
