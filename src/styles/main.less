@@ -4,7 +4,9 @@ html, body {
 }
 
 .tank {
+    position: relative;
     height: 100%;
+    overflow: hidden; // prevent scroll bar jumping due to bubbles starting off-screen
     background: linear-gradient(#38a5cf, #264890);
 }
 
@@ -12,6 +14,51 @@ html, body {
     width: 150px;
     height: 112px;
     animation: swim 3.5s infinite;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -50px;
+    background: white;
+    border-radius: 50%;
+    opacity: .4;
+    z-index: 2;
+}
+
+.bubble-1 {
+    left: 350px;
+    width: 20px;
+    height: 20px;
+    animation: up 4s infinite;
+}
+
+.bubble-2 {
+    width: 35px;
+    height: 35px;
+    left: 750px;
+    opacity: .30;
+    animation: up 3s infinite;
+}
+
+.bubble-3 {
+    width: 15px;
+    height: 15px;
+    left: 1025px;
+    animation: up 6s infinite;
+}
+
+.bubble-4 {
+    width: 40px;
+    height: 40px;
+    left: 50px;
+    animation: up 5s infinite;
+}
+
+.bubble-5 {
+    width: 30px;
+    height: 30px;
+    left: 1250px;
+    animation: up 5s infinite;
 }
 
 @keyframes swim {
@@ -29,5 +76,12 @@ html, body {
     }
     100% {
         transform: translate(1200px, -150px) rotate(-40deg);
+    }
+}
+
+@keyframes up {
+    100% {
+        transform: translateY(-1000px);
+        opacity: .1;
     }
 }
