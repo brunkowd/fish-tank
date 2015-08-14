@@ -8,11 +8,23 @@ html, body {
     background: linear-gradient(#38a5cf, #264890);
 }
 
+.coral3 {
+    width: 50px;
+}
+
 .fish {
     width: 150px;
     height: 112px;
     animation: swim 3.5s infinite;
 }
+
+.fish2 {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    animation: swimslow 11s;
+}
+
 
 @keyframes swim {
     0%, 5% {
@@ -30,4 +42,11 @@ html, body {
     100% {
         transform: translate(1200px, -150px) rotate(-40deg);
     }
+}
+
+@keyframes swimslow {
+    5% {
+        transform: translate(150px, 150px);
+    }
+
 }
