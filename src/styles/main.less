@@ -13,7 +13,9 @@ html, body {
 .fish {
     width: 150px;
     height: 112px;
-    animation: swim 3.5s infinite;
+    animation: swim 3.5s infinite linear;
+    z-index: 5;
+    position: absolute;
 }
 
 .bubble {
@@ -202,6 +204,31 @@ html, body {
   	top: 23px;
   	width: 25px;
   }
+}
+
+.castle {
+  position: absolute;
+  bottom: 0;
+  left: 350px;
+  width: 615px;
+  height: 500px;
+  bottom: -40px;
+}
+
+.castle-left,
+.castle-right {
+  position: absolute;
+  bottom: 0;
+}
+
+.castle-left {
+  z-index: 10;
+  left: 0;
+}
+
+.castle-right {
+  z-index: 1;
+  right: 0;
 }
 
 @keyframes plant_left {
